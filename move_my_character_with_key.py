@@ -66,8 +66,10 @@ while running:
     update_canvas()
     handle_events()
     frame = (frame + 1) % 4
-    x += dirX * 5
-    y += dirY * 5
+    if (x > 50 and x < 750):
+        x += dirX * 5
+    if (y > 50 and y < 550):
+        y += dirY * 5
     delay(0.05)
 
 # fill here
